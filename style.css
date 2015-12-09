@@ -1,0 +1,280 @@
+/*  Title: Google homepage
+	Author: Lisa Lin (github.com/lisaylin)
+	Date: 11/04/2015
+*/
+
+/* 
+===============================================================================
+Base Styles
+===============================================================================
+*/
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+	}
+
+html {
+	font-size:16px;
+	}
+
+body {
+	background-color: #fff;
+	font-family: sans-serif;
+	font-size: 62.5%; /*1 em = 10px */
+	}
+
+/*
+===============================================================================
+Clear fixes
+===============================================================================
+ */
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.group:after {
+	clear:both;
+}
+
+.group {
+	clear:both;
+	*zoom: 1;
+}
+
+/* 
+===============================================================================
+Helper Classes + Navigation Bar
+===============================================================================
+*/
+.active {
+	color: rgb(66, 133, 244);
+	border-bottom: 2px solid rgb(66, 133, 244);
+}
+
+.nav-btns {
+	float: right;
+	margin-right: 30px;
+	margin-top: -5px;
+}
+
+.font {
+	font-weight: 400;
+	color: #2f4f4f;
+	vertical-align: 20%;
+}
+
+
+#grid-position {
+	margin: -20px 12px 0 5px;
+}
+
+#grid {
+	height: 20px;
+	width: 20px;
+	margin-top: 13px
+}
+
+header li {
+	display: inline;
+	line-height: 30px;
+}
+
+/* 
+===============================================================================
+Links
+===============================================================================
+*/
+a {
+	color: rgb(123, 123, 123);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header a {
+	display: inline-block;
+	font-size: 1.3em;
+	font-weight:bold;
+	padding: 0px 6px 6px 6px;
+}
+
+
+footer a {
+	color: #666666;
+	font-size: 1.3em;
+}
+
+.google-search a:hover {
+	text-decoration: none;
+}
+
+.apps a {
+	color: #000;
+	display: none;
+	font-weight: 400;
+}
+
+/* 
+===============================================================================
+Header
+===============================================================================
+*/
+
+
+header {
+	padding: 12px 0 12px 12px;
+}
+
+
+/*
+===============================================================================
+Wrapper + Container + Google Logo 
+===============================================================================
+*/
+
+.wrapper {
+	margin: auto;
+	max-width:960px;
+	text-align: center;
+	min-width:980px;
+	position:relative;
+}
+
+.container {
+	position: absolute;
+	top: 340%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+
+#logo {
+    width: 272px;
+    height: 92px;
+    margin-top: 525px;
+    margin-bottom: 30px;
+}
+
+/* 
+===============================================================================
+Search Bar
+===============================================================================
+*/
+
+
+form {
+    position: relative;
+    width: 100%
+}
+
+form input[type="text"] {
+    background-color: #fff;
+    border: 1px solid #D8D8D8;
+    border-radius: 1px;
+    display: inline-block;
+    font-size: 1.6em; 
+    height: 40px;
+    outline: none;
+    padding: 6px 6px 6px 6px;
+    width: 195%;
+    margin-left: -125px;
+}
+
+/* 
+===============================================================================
+Styling Search Buttons
+===============================================================================
+*/
+
+
+.btn {
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 1.3em; /* 13px/10px */
+	height: 30px;
+	/* line-height:28px; */
+	outline: none;
+	padding: 0 12px;
+	vertical-align: middle;	
+}
+
+.btn-default {
+	background-color:rgb(248, 248, 248);
+	border: none;
+	color: rgb(103, 103, 103);
+}
+
+.btn-sign-in {
+    background: #4285f4;
+    border: 1px solid rgb(66, 133, 244);
+    color: #fff;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.btn-search,
+.btn-lucky {
+	background-color: #f2f2f2;
+	border: 1px solid rgb(0, 0, 0, 0);
+	border-radius: 2;
+	font-weight: bold;
+	height: 36px;
+	margin: 33px 4px;
+	min-width: 54px;
+}
+
+.btn-search:hover,
+.btn-lucky:hover {
+	color: #222;
+	background-color: #f8f8f8;
+	border: 1px solid #c6c6c6;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+/*
+===============================================================================
+Footer
+===============================================================================
+*/
+footer {
+    background-color: rgb(242, 242, 242);
+    border-top: 1px solid rgb(228, 228, 228);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+footer li {
+    display: inline;
+}
+
+.terms-conditions {
+	float: right;
+	margin: 14px
+}
+
+.about-google {
+	float: left;
+	margin: 14px
+}
+
+.spacing {
+	margin-left: 26px;
+	margin-right: 26px;
+}
+
+.left-space {
+	margin-left: 18px;
+}
+
+.right-space {
+	margin-right: 15px;
+}
